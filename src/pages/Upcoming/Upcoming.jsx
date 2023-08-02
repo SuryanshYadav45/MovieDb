@@ -9,7 +9,7 @@ const Upcoming = () => {
         const fetchmovie= async()=>
         {
             try {
-               const res= await fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.REACT_APP_API_KEY}`) ;
+               const res= await fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=8bee160639f926b57449b9c3344e5d34`) ;
                const data=await res.json();
                setupcoming(data);
             } catch (error) {
