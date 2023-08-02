@@ -9,7 +9,7 @@ const PopularMovie = () => {
     const fetchmovie = async () => {
       try {
         const response = await fetch(
-          `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}`
+          `https://api.themoviedb.org/3/discover/movie?api_key=8bee160639f926b57449b9c3344e5d34`
         );
         const data = await response.json();
         setpopularmovie([data]);
