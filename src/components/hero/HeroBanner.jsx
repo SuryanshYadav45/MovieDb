@@ -12,7 +12,7 @@ const HeroBanner = () => {
     const fetchUpcomingMovies = async () => {
       try {
         const response = await fetch(
-          `https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.REACT_APP_API_KEY}&page=1`
+          `https://api.themoviedb.org/3/movie/upcoming?api_key=8bee160639f926b57449b9c3344e5d34&page=1`
         );
         const data = await response.json();
         setUpcomingMovies(data.results.slice(0, 6)); // Slice the array to get only the first 6 items
