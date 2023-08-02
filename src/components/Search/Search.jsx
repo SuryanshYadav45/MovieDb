@@ -15,7 +15,7 @@ const Search = (props) => {
   const fetchMovies = async () => {
     try {
       const response = await fetch(
-        `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_KEY}&query=${searchQuery}`
+        `https://api.themoviedb.org/3/search/movie?api_key=8bee160639f926b57449b9c3344e5d34&query=${searchQuery}`
       );
       const data = await response.json();
       setsearchResult(data);
