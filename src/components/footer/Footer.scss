@@ -1,0 +1,50 @@
+@import "../../css-config/mixins.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*
+{
+    font-family: 'Roboto Slab', serif;
+}
+
+.footer
+{
+    background-color: black;
+    margin-bottom: none;
+    padding: 20px;
+    .footerWrapper
+    {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .contactbtn
+        {
+            width: 220px;
+            padding: 10px;
+            height: 50px;
+            text-decoration: none;
+            color:black;
+            background-color: #f5c518;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        h1{
+            color: white;
+            padding: 10px 0px;
+        }
+        div{
+            height: 2px;
+            width: 100%;
+            background-color: rgba(119, 112, 112, 0.3);
+        }
+        p{
+            color: white;
+            font-size: 19px;
+        }
+    }
+}

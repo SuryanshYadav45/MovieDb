@@ -1,0 +1,96 @@
+@import "../../css-config/mixins.scss";
+
+.navbar {
+  background-color: black;
+  height: 70px;
+  width: 100%;
+  color: white;
+  align-items: center;
+  padding: 5px 40px;
+  box-shadow: 0 2px 2px rgba(255, 255, 255, 0.6);
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+  }
+  .menuIcon {
+    display: none;
+    @include sm {
+      display: block;
+    }
+  }
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    .searchbtn
+    {
+        font-size: 40px;
+        margin-right: 20px;
+        @include sm{
+          font-size: 20px;
+        }
+    }
+  .navbarright {
+    display: flex;
+    align-items: center;
+    @include sm {
+      display: none;
+    }
+    ul {
+      margin-top: 13px;
+      display: flex;
+      list-style: none;
+      li {
+        padding: 2px 10px;
+        text-transform: capitalize;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
+}
+.submenu {
+  background-color: black;
+  height:calc(100vh - 70px);
+  width: 70%;
+  animation: slideIn 0.4s forwards;
+  right: -100%;
+  position: fixed;
+  z-index: 33;
+  ul {
+    
+    list-style: none;
+    li {
+        padding: 10px 0px;
+      text-transform: capitalize;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+  input{
+    margin-left: 32px;
+
+  }
+}
+
+@keyframes slideIn {
+    to {
+      right: 0; /* Animate the div to the right: 0 (visible on the screen) */
+    }
+  }
+
+  // @keyframes glow {
+  //   from {
+  //     box-shadow: 0 4px 3px rgba(255, 255, 255, 0.6);
+  //   }
+  //   to {
+  //     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.8);
+  //   }
+  // }

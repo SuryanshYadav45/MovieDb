@@ -1,0 +1,15 @@
+@import "../../css-config/mixins.scss";
+
+.rated
+{
+    background-color: black;
+    
+    .ratedWrapper
+    {
+        max-width: 1450px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+}

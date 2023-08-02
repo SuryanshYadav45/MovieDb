@@ -1,0 +1,36 @@
+@import "../../css-config/mixins.scss";
+
+.populate
+{
+    background-color: black;
+    h3{
+        padding: 30px 30px;
+        color: #f5c518;
+        max-width: 1200px;
+        margin: 0 auto;
+        font-size: 40px;
+        font-weight: 600;
+        &::after
+        {
+            content: " ";
+            display: block;
+            background-color: #f5c518;
+            width: 140px;
+            height: 4px;
+            margin-top: 5px;
+        }
+    }
+    
+    .populatewrapper
+    {
+        max-width: 1200px;
+        padding: 10px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

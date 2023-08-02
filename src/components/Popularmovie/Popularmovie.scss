@@ -1,0 +1,39 @@
+@import "../../css-config/mixins.scss";
+
+
+.popularmovie
+{
+    
+    background-color: black;
+    padding-bottom: 40px;
+    h3{
+        color: #f5c518;
+        max-width: 1200px;
+        margin: 0 auto;
+        font-size: 40px;
+        font-weight: 600;
+        padding: 20px 0px;
+        margin-bottom: 20px;
+        padding-left: 30px;
+        &::after
+        {
+            content: "";
+            display: block;
+            width:200px;
+            height: 4px;
+            margin-top: 10px;
+            background-color: #f5c518;
+        }
+    }
+    
+    .popularwrapper
+    {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
+}

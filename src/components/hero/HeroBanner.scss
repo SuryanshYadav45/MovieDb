@@ -1,0 +1,90 @@
+@import "../../css-config/mixins.scss";
+
+.banner
+{
+    width: 100%;
+    max-height: 700px;
+    position: relative;
+    div{
+        .carouselContent
+        {
+            position: relative;
+            img{
+                width: 100%;
+                max-height: 600px;
+                object-fit:fill;
+                
+
+            }
+            .moviedetail
+            {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+                height: 60%;
+                @include sm{
+                    display: none;
+                }
+                .moviedetailwrapper{
+                    padding: 0px 30px;
+                    position: absolute;
+                    bottom: 5%;
+                    width: 60%;
+                    
+                .name
+                {
+                    font-size: 60px;
+                    color: white;
+                    font-weight: 700;
+                    text-align: start;
+                    word-wrap: break-word;
+                    padding: 5px;
+
+                    @include md{
+                        font-size: 45px;
+                    }
+                    @include sm-lg{
+                        font-size: 35px;
+                    }
+                }
+                .info
+                {
+                    display: flex;
+                    width: 300px;
+                    justify-content: space-between;
+                    color: white;
+                    .releasedate
+                    {
+                        padding-left: 8px;
+                        font-size: 30px;
+                        @include md{
+                            font-size: 30px;
+                        }
+                        @include sm-lg{
+                            font-size: 20px;
+                        }
+                    }
+                    .rating
+                    {
+                        padding-right: 8px;
+                        font-size: 30px;
+                        @include md{
+                            font-size: 30px;
+                        }
+                        @include sm-lg{
+                            font-size: 20px;
+                        }
+                    }
+                }
+                p{
+                    padding-left: 8px;
+                    color: white;
+                    text-align: start;
+                    font-size: 18px;
+                }
+            }
+        }
+        }
+    }
+}
